@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(151, 231, 151);
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pannel {
+  height: 90%;
+  width: 70%;
+  background-color: #ffff;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main h1 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.p-top {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(43, 76, 43);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 10px;
+}
+
+.elements {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffff;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+.box {
+  height: 20px;
+  width: 30px;
+  background-color: white;
+  color: rgb(22, 76, 22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.p-bottom {
+  height: calc(100% - 45px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.bubble {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(43, 76, 43);
+  color: white;
+  font-size: 10px;
+}
+
+.bubble:hover {
+  cursor: pointer;
+  background-color: rgb(29, 48, 29);
+  transform: scale(1.2);
+}
+
+.again {
+  height: 27px;
+  width: 80px;
+  background-color: rgb(43, 76, 43);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+@media (max-width:650px) {
+  .main h1{
+    font-size: 32px;
+  }
+  .p-top{
+    height: 70px
+  }
+  .pannel{
+    height: 87%;
+    width: 95%;
+    padding-bottom: 5px;
+    
+  }
+  .bubble{
+    height: 35px;
+    width: 35px;
+    font-size: 17px;
+  }
+  .box{
+    height: 30px;
+    width: 35px;
+  }
+  h4{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .again{
+    height: 40px;
+    width: 120px;
+    font-size: 25px;
+
+  }
+}
